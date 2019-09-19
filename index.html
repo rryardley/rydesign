@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Arsenal|Prata&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/bd180338cf.js"></script>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <header>
+    <div class="topnav">
+      <figure>
+        <a href="#">
+          <img src="img/ry-logo-name.png" alt="ry design logo">
+        </a>
+      </figure>
+      <nav>
+        <div class="nav">
+
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+           <!-- Navigation links (hidden by default) -->
+          <ul class="menu" id="menuLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+
+        </div>
+
+        <div class="desktop-nav">
+          <ul class="desktop-menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="hero-area">
+      <div class="content-wrapper">
+        <h1>Website and logo designs that reflect and enhance your unique brand.</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="content-wrapper" id="services">
+        <h2>Services</h2>
+        <div class="services">
+          <div class="service-outer-box" id="web-design-service">
+            <div class="service-inner-box">
+              <h3>Web Design & Development</h3>
+            </div>
+          </div>
+          <div class="service-outer-box" id="logo-design-service">
+            <div class="service-inner-box">
+              <h3>Logo Design</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content-wrapper" id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings Food Truck Website Thumbnail" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/jubilee-austen-thumbnail.png" alt="Jubilee Austen Portfolio Website Thumbnail" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/unplugged-thumbnail.png" alt="Unplugged Retreat Website Thumbnail" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div> <!-- End of slideshow container -->
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+      </div> <!-- End of portfolio content wrapper -->
+    </section>
+
+    <section>
+      <div class="content-wrapper" id="about">
+        <h2>About Me</h2>
+        <article>
+          <figure>
+              <img src="img/amec-photo.jpeg">
+          </figure>
+          <div class="bio">
+            <h3>Hi there! Thanks for dropping by.</h3>
+            <p>
+              I know how much time and effort goes into running a business. I also know how frustrating it can be to spend hours on something outside your area of expertise, only to have it come out less than perfect. And if that something is your website you could be missing out on a prime opportunity to showcase your business. That’s where I come in. I can help you create a website and logo that reflect and enhance your unique brand, so you can focus on your business. Spend your valuable time doing the parts of your business that you love! Let me take care of sharing it with the world.
+            </p>
+            <h3>I'm an engineer with an eye for design.</h3>
+            <p>
+              I am a Web Designer and Developer with a background in engineering and art. I graduated from Cornell University with a BS and MEng in Engineering in 2014. I have taken art classes through highschool, college, and post-grad life. I love designing and developing websites because it combines my love of logic and problem-solving with my passion for art and design. I enjoy working with clients who want to highlight and enhance their unique brand through their website. If that’s you, please get in touch!
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="content-wrapper" id="contact">
+      <h2>Contact</h2>
+      <div class="footer-content">
+        <div class="form">
+          <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input type="text" name="name" placeholder="Name (required)" required>
+            <input type="email" name="email" placeholder="Email Address (required)" required>
+            <textarea name="message" placeholder="How can I help you? (required)" rows="3" required></textarea>
+            <input type="button" value="Submit">
+          </form>
+        </div>
+
+        <div class="direct-contact">
+          <address id="contact-info">
+            <p>
+              610-533-8685<br>
+              RRYDesigns@gmail.com
+            </p>
+          </address>
+          <div class="social">
+            <p>
+              <a href="https://www.linkedin.com/in/rosemary-yardley-46069b58/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+            <p>
+              <a href="https://github.com/rryardley" target="_blank"><i class="fab fa-github"></i></a>
+            </p>
+            <p>
+              <a href="https://twitter.com/RosemaryYardley" target="_blank"><i class="fab fa-twitter"></i></a>
+            </p>
+          </div>
+      </div>
+
+      </div> <!-- footer content ends -->
+    </div>
+    <!--footer content-wrapper ends-->
+    <div class="copyright">
+      <p>Copyright 2019 | Rosemary Yardley</p>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
