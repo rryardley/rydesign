@@ -1,18 +1,28 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Logo Design</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Arsenal|Prata&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/bd180338cf.js"></script>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,11 +33,170 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <script src="../js/vendor/modernizr-3.7.1.min.js"></script>
+
+  <header>
+    <div class="topnav">
+      <figure>
+        <a href="../index.html">
+          <img src="../img/ry-logo-name.png" alt="ry design logo">
+        </a>
+      </figure>
+      <nav>
+        <div class="nav">
+
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+           <!-- Navigation links (hidden by default) -->
+          <ul class="menu" id="menuLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../web-design/index.html">Web Design</a></li>
+            <li><a href="../brand-design/index.html">Brand Design</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+
+        </div>
+
+        <div class="desktop-nav">
+          <ul class="desktop-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../web-design/index.html">Web Design</a></li>
+            <li><a href="../brand-design/index.html">Brand Design</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="hero-area" id="logo-hero-area">
+      <div class="content-wrapper">
+        <h1>Your logo is your company's identity. What do you want it to say about your brand?</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="content-wrapper" id="web-services">
+        <h2>Logo Design Services</h2>
+        <div class="web-services-all">
+          <div class="web-service-individual">
+            <h3>Original Design From Scratch</h3>
+            <ul>
+              <li>Brand new logo that captures the essence of your business</li>
+              <li>Color scheme, typography, and imagery/styling based on consumer research</li>
+              <li>Reflection of your existing brand or your vision for new branding</li>
+              <li>Optional alternate logo for marketing versatility</li>
+            </ul>
+            <p><strong><em>Perfect for: People who don’t have a logo yet or who want something totally different from their existing logo.</em></strong></p>
+          </div>
+
+          <div class="web-service-individual">
+            <h3>Update on Existing Logo</h3>
+            <ul>
+              <li>Existing logo altered and refreshed</li>
+              <li>Changes to color scheme, typography, and imagery/styling based on consumer research</li>
+              <li>Reflection of your existing branding or your vision for new branding</li>
+              <li>Optional alternate logo for marketing versatility</li>
+            </ul>
+            <p><strong><em>Perfect for: People who have an existing logo that they want to freshen up.</em></strong></p>
+          </div>
+        </div>
+        <h3>Interested in learning more? Contact me for a free consultation to help you evaluate your needs and find the best solution for you.</h3>
+        <figure class="arrow-down">
+          <a href="#contact">
+            <img src="../img/arrow-down.png" alt="arrow down">
+          </a>
+        </figure>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="content-wrapper" id="web-services-about">
+        <h2>Logo Designs Based On Consumer Psychology Research</h2>
+        <article>
+          <figure id="responsive-figure">
+            <div class="responsive-img">
+              <img src="../img/wb-logos.png" alt="whole bean logos">
+            </div>
+          </figure>
+          <div class="bio">
+            <p>
+              A logo is more than just a symbol to use in marketing materials - it is the face of your brand and the first impression for your business. Something this important needs to be designed intentionally and thoughtfully to not only represent your unique brand, but to evoke emotion and build connection between your patrons and your business.
+            </p>
+            <br>
+            <p>
+              I conduct consumer research before ever touching pen to paper when designing logos. I use consumer psychology research to choose colors, fonts, and styling that align and connect with your mission, your brand personality, and your clientele.
+            </p>
+            <br>
+            <p>
+              Are you looking to rebrand or need help building a new brand? I can help! See my <a href="../brand-design/index.html"><strong>Branding & Identity Design Services</strong></a> page for more information.
+            </p>
+          </div>
+        </article>
+        <h3>Contact me below to get started!</h3>
+        <figure class="arrow-down">
+          <a href="#contact">
+            <img src="../img/arrow-down.png" alt="arrow down">
+          </a>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="content-wrapper" id="contact">
+      <h2>Contact</h2>
+      <div class="footer-content">
+        <div class="form">
+          <form id="contact-form" method="post" action="contact.php">
+            <input type="text" name="name" placeholder="Name (required)" required>
+            <input type="email" name="email" placeholder="Email Address (required)" required>
+            <textarea name="message" placeholder="How can I help you? (required)" rows="3" required></textarea>
+            <input type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+
+        <div class="direct-contact">
+          <address id="contact-info">
+            <p>
+              610-533-8685<br>
+              RRYDesigns@gmail.com<br>
+              Lehigh Valley, PA
+            </p>
+          </address>
+          <div class="social">
+            <p>
+              <a href="https://www.linkedin.com/in/rosemary-yardley-46069b58/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+            <p>
+              <a href="https://github.com/rryardley" target="_blank"><i class="fab fa-github"></i></a>
+            </p>
+            <p>
+              <a href="https://twitter.com/RosemaryYardley" target="_blank"><i class="fab fa-twitter"></i></a>
+            </p>
+          </div>
+      </div>
+
+      </div> <!-- footer content ends -->
+    </div>
+    <!--footer content-wrapper ends-->
+    <div class="copyright">
+      <p>Copyright 2019 | Rosemary Yardley</p>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

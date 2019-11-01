@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Rosemary Yardley Design</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,6 +20,7 @@
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -83,14 +84,25 @@
         <h2>Services</h2>
         <div class="services">
           <div class="service-outer-box" id="web-design-service">
-            <div class="service-inner-box">
-              <h3>Web Design & Development</h3>
-            </div>
+            <a href="web-design/index.html">
+              <div class="service-inner-box">
+                <h3>Web Design & Development</h3>
+              </div>
+            </a>
           </div>
           <div class="service-outer-box" id="logo-design-service">
-            <div class="service-inner-box">
-              <h3>Logo Design</h3>
-            </div>
+            <a href="logo-design/index.html">
+              <div class="service-inner-box">
+                <h3>Logo Design</h3>
+              </div>
+            </a>
+          </div>
+          <div class="service-outer-box" id="brand-design-service">
+            <a href="brand-design/index.html">
+              <div class="service-inner-box">
+                <h3>Brand & Identity Design</h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -136,7 +148,7 @@
         <h2>About Me</h2>
         <article>
           <figure>
-              <img src="img/amec-photo.jpeg">
+              <img src="img/headshot.jpg" alt="headshot">
           </figure>
           <div class="bio">
             <h3>Hi there! Thanks for dropping by.</h3>
@@ -145,7 +157,7 @@
             </p>
             <h3>I'm an engineer with an eye for design.</h3>
             <p>
-              I am a Web Designer and Developer with a background in engineering and art. I graduated from Cornell University with a BS and MEng in Engineering in 2014. I have taken art classes through highschool, college, and post-grad life. I love designing and developing websites because it combines my love of logic and problem-solving with my passion for art and design. I enjoy working with clients who want to highlight and enhance their unique brand through their website. If that’s you, please get in touch!
+              I am a Web Designer and Developer with a background in engineering and art. I graduated from Cornell University with a BS and MEng in Engineering in 2014. I have taken art classes through highschool, college, and post-grad. I love designing and developing websites because it combines my love of logic and problem-solving with my passion for art and design. I enjoy working with clients who want to highlight and enhance their unique brand through their website and logo. If that’s you, please get in touch!
             </p>
           </div>
         </article>
@@ -159,11 +171,11 @@
       <h2>Contact</h2>
       <div class="footer-content">
         <div class="form">
-          <form id="contact-form" method="post" action="contact-form-handler.php">
+          <form id="contact-form" method="post" action="contact.php">
             <input type="text" name="name" placeholder="Name (required)" required>
             <input type="email" name="email" placeholder="Email Address (required)" required>
             <textarea name="message" placeholder="How can I help you? (required)" rows="3" required></textarea>
-            <input type="button" value="Submit">
+            <input type="submit" name="submit" value="Submit">
           </form>
         </div>
 
@@ -171,7 +183,8 @@
           <address id="contact-info">
             <p>
               610-533-8685<br>
-              RRYDesigns@gmail.com
+              RRYDesigns@gmail.com<br>
+              Lehigh Valley, PA
             </p>
           </address>
           <div class="social">

@@ -326,7 +326,7 @@ textarea {
      margin-bottom: 1em;
    }
 
-   input[type=button] {
+   input[type=submit] {
      width: 50%;
      padding: 20px 0;
      background-color: #a89797;
@@ -336,6 +336,11 @@ textarea {
      border: none;
      text-align: center;
      text-transform: uppercase;
+     cursor: pointer;
+   }
+
+   input[type=submit]:hover {
+     background-color: #3b3b3b;
    }
 
    footer .direct-contact {
@@ -417,6 +422,7 @@ textarea {
    .services {
      display: flex;
      justify-content: center;
+     align-items: center;
      align-content: center;
      flex-flow: column wrap;
      width: 100%;
@@ -444,6 +450,11 @@ textarea {
      color: black;
    }
 
+   a .service-inner-box:hover {
+     background-color: rgba(168, 151, 151, 1.0);
+     font-size: 1.2em;
+   }
+
    .service-outer-box#web-design-service {
      background: url(../img/laptop-code.jpeg);
      background-size: cover;
@@ -456,10 +467,15 @@ textarea {
      background-position: center;
    }
 
+   .service-outer-box#brand-design-service {
+     background: url(../img/journal.jpeg);
+     background-size: cover;
+     background-position: center;
+   }
+
 
 
    /* Portfolio */
-
 
    /* Slideshow container */
    .slideshow-container {
@@ -568,11 +584,180 @@ textarea {
       Web Design & Development Page
       ========================================================================== */
 
+      /* Hero Area */
+
+      #web-hero-area {
+        background: url(../img/laptop-glasses.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 350px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+      }
+
+      #web-hero-area .content-wrapper {
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+
+      #web-hero-area h1 {
+        text-align: center;
+      }
+
+      #web-hero-area h1 span {
+        width: 75%;
+        font-size: 1.3em;
+        margin: 0;
+        padding-top: 2em;
+        text-align: center;
+      }
+
+
+      /* Services Breakdown Section */
+
+      .web-services-all {
+          background-color: #a89797;
+          padding: 0.75em;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .web-service-individual {
+        background-color: #fff;
+        width: 80%;
+        padding: 1em;
+        margin: 1em 0;
+        border: 3px solid #3b3b3b;
+
+      }
+
+      .web-service-individual h3 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .web-service-individual ul {
+        list-style-type: disc;
+        padding: 0 1em;
+        font-size: 1.25em;
+      }
+
+      .web-service-individual p {
+        font-size: 1.25em;
+      }
+
+      #web-services h3 {
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0 0.5em;
+      }
+
+
+      /* Responsive Designs Section */
+
+      #web-services-about {
+        width: 100%;
+      }
+
+      #web-services-about h2 {
+        margin: 0;
+        padding: 0 0.5em;
+      }
+
+      #web-services-about .bio {
+        width: 100%;
+        align-items: center;
+      }
+
+      #web-services-about .bio p {
+        width: 90%;
+      }
+
+      #web-services-about h3 {
+        text-align: center;
+        font-size: 1.25em;
+      }
+
+      .arrow-down {
+        display: flex;
+        justify-content: center;
+      }
+
+      .arrow-down a {
+        max-width: 20%;
+        height: auto;
+      }
+
+
+
 
    /* ==========================================================================
       Logo Design Page
       ========================================================================== */
 
+
+      #logo-hero-area {
+        background: url(../img/blank-canvas.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 350px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+      }
+
+      #logo-hero-area .content-wrapper {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      #logo-hero-area h1 {
+        text-align: center;
+      }
+
+
+  /* ==========================================================================
+      Brand & Identity Design Page
+      ========================================================================== */
+
+
+      #brand-hero-area {
+        background: url(../img/color-swatches.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 350px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+      }
+
+      #brand-hero-area .content-wrapper {
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+
+      #brand-hero-area h1 {
+        text-align: center;
+      }
+
+      /* Branding & Identify Designs Details */
+
+      #style-guide-figure {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+      }
+
+      .style-guide-img {
+        max-width: 50%;
+        height: auto;
+        text-align: center;
+      }
+
+      .style-guide-img h4 {
+        margin: 0.5em 0;
+        font-size: 1em;
+      }
 
 
 /* ==========================================================================
@@ -706,12 +891,85 @@ textarea {
       width: 90%;
     }
 
+    /* Services */
+    #services {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+    }
+
+    #services h2 {
+      width: 100%;
+    }
+
+    .service-outer-box {
+      width: 200px;
+      height: 200px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .service-inner-box {
+      width: 120px;
+      height: 120px;
+    }
+
+
     /* Contact */
     #contact-info p {
       background: #f5f5f5;
       padding: 2em;
     }
 
+    /* Web Services Page */
+    /* Hero Area */
+    #web-hero-area {
+      min-height: 500px;
+    }
+
+
+    /* Responsive Designs Section */
+
+    #web-services-about article {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    #web-services-about #responsive-figure {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #web-services-about .bio {
+      width: 50%;
+      padding: 1em 1em 0 0;
+    }
+
+    .arrow-down a {
+      max-width: 10%;
+      height: auto;
+    }
+
+    /* Logo Design Services Page */
+    /* Hero Area */
+
+    #logo-hero-area {
+      min-height: 500px;
+    }
+
+    /* Brand Design Services Page */
+    /* Hero Area */
+
+    #brand-hero-area {
+      min-height: 500px;
+    }
+
+
+    #style-guide-figure {
+      width: 50%;
+      padding-top: 5em;
+    }
 
 }
 
@@ -736,6 +994,32 @@ textarea {
       margin-left: auto;
       margin-right: auto;
     }
+
+    /* Contact */
+
+   .footer-content {
+     flex-flow: row wrap;
+     justify-content: space-around;
+   }
+
+   .form {
+     margin-bottom: 2em;
+   }
+
+   .direct-contact {
+     padding-right: 2em;
+   }
+
+   #contact-info p {
+     background: transparent;
+   }
+
+/* Brand Designs Page */
+
+   #style-guide-figure {
+     width: 50%;
+     padding-top: 2em;
+   }
 
 }
 
@@ -794,7 +1078,7 @@ textarea {
 
      /* Hero area */
      .hero-area {
-       min-height: 700px;
+       min-height: 800px;
      }
 
      .hero-area .content-wrapper {
@@ -805,7 +1089,7 @@ textarea {
      .hero-area .content-wrapper h1 {
        width: 50%;
        margin-left: 2em;
-       font-size: 2.25em;
+       font-size: 2em;
      }
 
      /* Services */
@@ -826,8 +1110,8 @@ textarea {
      }
 
      .service-outer-box {
-       width: 390px;
-       height: 390px;
+       width: 375px;
+       height: 375px;
      }
 
      .service-inner-box {
@@ -859,29 +1143,89 @@ textarea {
        margin: 0;
      }
 
-     /* Contact */
+/* Web Design Services Page */
+/* Hero Area */
 
-    .footer-content {
-      flex-flow: row wrap;
-      justify-content: space-around;
+    #web-hero-area {
+      min-height: 800px;
     }
 
-    .form {
-      margin-bottom: 2em;
-    }
+     #web-hero-area h1 {
+       width: 100%;
+       margin: 0;
+       padding-top: 1em;
+       font-size: 2em;
+     }
 
-    .direct-contact {
-      padding-right: 2em;
-    }
+     /* Services Breakdown Section */
 
-    #contact-info p {
-      background: transparent;
-    }
+     .web-services-all {
+       flex-flow: row nowrap;
+       justify-content: center;
+     }
 
+     .web-service-individual {
+       min-height: 515px;
+       width: 25%;
+       margin: 1em;
+     }
+
+     /* Responsive Designs Section */
+
+     #web-services-about .bio {
+       margin: 0;
+     }
+
+     .arrow-down a {
+       max-width: 8%;
+       height: auto;
+     }
+
+     /* Logo Design Services Page */
+     /* Hero Area */
+
+      #logo-hero-area {
+       min-height: 800px;
+     }
+
+     #logo-hero-area h1 {
+       width: 100%;
+       margin: 0;
+       padding-top: 1em;
+       font-size: 2em;
+     }
+
+     /* Brand & Identity Design Services Page */
+     /* Hero Area */
+
+      #brand-hero-area {
+       min-height: 800px;
+     }
+
+     #brand-hero-area h1 {
+       width: 100%;
+       margin: 0;
+       padding-top: 1em;
+       font-size: 2em;
+     }
 
 }
 
+@media only screen and (min-width:1280px) {
+     /*1280px Desktop styles here*/
 
+     .web-service-individual {
+       min-height: 475px;
+     }
+}
+
+@media only screen and (min-width:1360px) {
+     /*1360px Desktop styles here*/
+
+     .web-service-individual {
+       min-height: 440px;
+     }
+}
 
 
 @media print,
